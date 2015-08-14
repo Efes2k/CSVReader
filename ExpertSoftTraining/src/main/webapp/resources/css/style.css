@@ -1,0 +1,90 @@
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    
+    background-color:#828282;
+}
+
+
+.sidebar{
+	margin: -100px 10px 10px 20px;
+	padding: 15px;
+	float:left;
+}
+
+.main{
+	padding: 15px;
+	margin: 0px 10px 10px 440px
+	
+}
+
+.errorText{
+	color: red;
+}
+
+.styled-select{
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(new_arrow.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   }
+   
+.selectContainer{
+	width:70px;
+}
+.selectContainerMin{
+	width:50px;
+}
+   
+   
+.containerAll{
+ 
+    background-color: rgb(229, 229, 229);
+    width:1200px;
+    min-height: 1500px;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.searchResutlContainer{
+	margin: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 50px;
+	height: 20%;
+	
+}
+
+
+.comments-list{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.user_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.comments-list .media{
+    border-bottom: 1px dotted #ccc;
+}
+
+
+
+
+
+
+
+
