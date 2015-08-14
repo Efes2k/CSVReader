@@ -1,14 +1,13 @@
 # CSVReader
 
 **Description:**
-1. Valid extensions: text/csv, application/vnd.ms-excel, application/csv.(For example: temp.csv )
+- Valid extensions: text/csv, application/vnd.ms-excel, application/csv.(For example: temp.csv )
 Additional extensions you can add to mimeType.properties.
-2. Data entered in the format:
-login, name, surname, email, phoneNumber
-separators: "." and ";"
-3.Update entries occur when matching field login.
-4.Database setting are in the file database.properties.
-5.Deploying on Tomcat 7.0 .
+- Data entered in the format: login, name, surname, email, phoneNumber
+- separators: "." and ";"
+- Update entries occur when matching field login.
+- Database setting are in the file database.properties.
+- Deploying on Tomcat 7.0 .
 
 **Working with application in Eclipse/STS.**
 
