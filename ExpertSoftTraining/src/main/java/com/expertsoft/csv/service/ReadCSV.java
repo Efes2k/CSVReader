@@ -15,7 +15,6 @@ import com.expertsoft.csv.entity.Contact;
 public class ReadCSV {
 	public static final Logger logger = Logger.getLogger(ReadCSV.class);
 	
-	
 	public List<Contact> getContactListFromCVS(InputStream is) {
 		List<Contact> list = new ArrayList<Contact>();
 		String line = "";
@@ -23,7 +22,9 @@ public class ReadCSV {
 		try (BufferedReader br = new BufferedReader(new InputStreamReader(is));) {
 			while ((line = br.readLine()) != null) {
 				String[] contact = line.split(cvsSplitBy);
-				list.add(new Contact(contact[0], contact[1], contact[2], contact[3], Integer.parseInt(contact[4])));
+				if(contact.length == 5){ 
+					list.add(new Contact(contact[0], contact[1], contact[2], contact[3], Integer.parseInt(contact[4])));
+					}
 			}
 		} catch (FileNotFoundException e) {
 			logger.warn("file not found");

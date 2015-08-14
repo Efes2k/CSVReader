@@ -97,7 +97,7 @@
 						</tbody>
 					</table>
 						<div class="row">
-							<div class="col-md-offset-4 col-md-4">
+							<div class="col-md-offset-4 col-md-8">
 							<ul class="pagination">
 								<c:url	value="/controller?action=showListPage&page=${currentPage - 1}"	var="urlShowListMinus"></c:url>
 								<c:if test="${currentPage != 1}">

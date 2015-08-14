@@ -1,5 +1,6 @@
 package com.expertsoft.csv.entity;
 
+
 public class Contact {
 	
 	private String login;

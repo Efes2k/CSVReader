@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
-
 public class MimeType {
 	public static List<String> getMimeTypes() {
 		List<String> result = new ArrayList<String>();

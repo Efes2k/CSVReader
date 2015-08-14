@@ -27,8 +27,11 @@ public class ControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 3450601415542762362L;
 	private static final String SUCCESS_MESSAGE = "File successfully downloaded.";
 	private static final String ERROR_MESSAGE = "Incorrect file.";
+	private static final String MAIN_PAGE_JSP = "/WEB-INF/pages/main.jsp";
+	private static final String ADD_CSV_PAGE_JSP = "/WEB-INF/pages/addCsv.jsp";
+	private static final String LIST_PAGE_JSP = "/WEB-INF/pages/list.jsp";
+	private static final String ERROR_PAGE_JSP = "/WEB-INF/pages/error.jsp";
 	private static final Logger logger = Logger.getLogger(ControllerServlet.class); 
-	
 	private ReadCSV readCvs = new ReadCSV(); 
     private ContactDao contDao = new ContactDaoImpl(); 
 
@@ -40,17 +43,17 @@ public class ControllerServlet extends HttpServlet {
 		String action = request.getParameter("action");
 		switch (action) {
 		case "homePage":
-			request.getRequestDispatcher("/WEB-INF/pages/main.jsp").forward(request, response);
+			request.getRequestDispatcher(MAIN_PAGE_JSP).forward(request, response);
 			break;
 		case "addCsvPage":
-			request.getRequestDispatcher("/WEB-INF/pages/addCsv.jsp").forward(request, response);
+			request.getRequestDispatcher(ADD_CSV_PAGE_JSP).forward(request, response);
 			break;
 		case "showListPage":
 			listPage(request);
-			request.getRequestDispatcher("/WEB-INF/pages/list.jsp").forward(request, response);
+			request.getRequestDispatcher(LIST_PAGE_JSP).forward(request, response);
 			break;
 		default:
-			response.sendRedirect("/WEB-INF/pages/error.jsp");
+			response.sendRedirect(ERROR_PAGE_JSP);
 			break;
 		}
 		
@@ -60,7 +63,7 @@ public class ControllerServlet extends HttpServlet {
 		String action = request.getParameter("action");
 		if(action.equals("uploadCsv")){
 			cvsPage(request);
-			request.getRequestDispatcher("/WEB-INF/pages/addCsv.jsp").forward(request, response);
+			request.getRequestDispatcher(ADD_CSV_PAGE_JSP).forward(request, response);
 		}
 	}
 

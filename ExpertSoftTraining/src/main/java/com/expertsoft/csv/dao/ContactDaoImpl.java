@@ -7,13 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.ManagedBean;
-
 import org.apache.log4j.Logger;
 
 import com.expertsoft.csv.entity.Contact;
 
-@ManagedBean
 public class ContactDaoImpl implements ContactDao {
 	private final static String SQL_INSERT = "INSERT INTO contacts(login,name,surname,email,phone_number) VALUES(?,?,?,?,?)";
 	private final static String SQL_UPDATE = "UPDATE contacts set login = ? , name = ? , surname = ? , email = ? , phone_number = ? WHERE id = ?";
