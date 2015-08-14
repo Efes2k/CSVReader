@@ -1,4 +1,6 @@
-CREATE TABLE `contacts` (
+CREATE DATABASE csv;
+
+CREATE TABLE `csv`.`contacts` (
   `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
   `login` varchar(20) NOT NULL ,
   `name` varchar(20) NOT NULL DEFAULT '',
