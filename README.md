@@ -2,11 +2,11 @@
 
 **Description:**
 - Valid extensions: text/csv, application/vnd.ms-excel, application/csv.(For example: temp.csv )
-Additional extensions you can add to mimeType.properties.
+- Additional extensions you can add to mimeType.properties.
+- Database setting are in the file database.properties.
 - Data entered in the format: login, name, surname, email, phoneNumber
 - separators: "." and ";"
 - Update entries occur when matching field login.
-- Database setting are in the file database.properties.
 - Deploying on Tomcat 7.0 .
 
 **Working with application in Eclipse/STS.**
