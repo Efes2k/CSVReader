@@ -8,6 +8,7 @@
 - separators: "." and ";"
 - Update entries occur when matching field login.
 - Deploying on Tomcat 7.0 .
+- Testing in Firefox 39.0, Chrome 44.0.2403.
 
 **Working with application in Eclipse/STS.**
 
