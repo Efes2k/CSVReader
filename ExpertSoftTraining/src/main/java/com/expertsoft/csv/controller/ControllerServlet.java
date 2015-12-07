@@ -43,6 +43,7 @@ public class ControllerServlet extends HttpServlet {
 		String action = request.getParameter("action");
 		final String testString = " 1 ";
 		final String testString2 = " 2 ";
+		final String testString3 = " 3 ";
 		switch (action) {
 		case "homePage":
 			request.getRequestDispatcher(MAIN_PAGE_JSP).forward(request, response);
