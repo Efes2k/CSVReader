@@ -41,6 +41,7 @@ public class ControllerServlet extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
+		final String testString = " test ";
 		switch (action) {
 		case "homePage":
 			request.getRequestDispatcher(MAIN_PAGE_JSP).forward(request, response);
